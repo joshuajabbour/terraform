@@ -174,6 +174,7 @@ Default `1000`
 * `max_conn` - (Optional) Maximum number of connections for this Backend.
 Default `200`.
 * `port` - (Optional) The port number on which the Backend responds. Default `80`.
+* `shield` - (Optional) The shield POP designated to reduce inbound load on this origin by serving the cached data to the rest of the network. Default `""`.
 * `ssl_check_cert` - (Optional) Be strict about checking SSL certs. Default `true`.
 * `weight` - (Optional) The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
 
